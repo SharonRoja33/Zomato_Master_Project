@@ -1,5 +1,5 @@
 import mongoose  from "mongoose";
-import bcrypt from "bcryptjs"
+import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 
 const UserSchema = new mongoose.Schema(
@@ -7,9 +7,9 @@ const UserSchema = new mongoose.Schema(
     fullname: { type: String, required: true },
     email: { type: String, required: true },
     password: { type: String },
-    address: [{ detail: { type: String }, for: { type: String} }],
+    address: [{ detail: { type: String }, for: { type: String } }],
     phoneNumber: [{ type: Number }],
-    }, 
+    },
     {
         timestamps: true,
     }
@@ -66,4 +66,6 @@ UserSchema.pre("save", function (next) {
     });
 });
 
-export const UserModel = mongoose.model("Users", UserSchema);
+//export const UserModel = mongoose.model("Users", UserSchema);
+
+module.exports = mongoose.model("Users", UserSchema);

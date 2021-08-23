@@ -18,7 +18,7 @@ const RestaurantSchema = new mongoose.Schema({
     },
     menu: {
         type: mongoose.Types.ObjectId,
-        ref: "Menus",
+        ref: "Menu",
     },
     reviews: [{
         type: mongoose.Types.ObjectId,
@@ -34,4 +34,6 @@ const RestaurantSchema = new mongoose.Schema({
 }
 );
 
-export const RestaurantModel = mongoose.model("Restaurants", RestaurantSchema);
+//export const RestaurantModel = mongoose.model("Restaurants", RestaurantSchema);
+
+module.exports = mongoose.model("Restaurants", RestaurantSchema);
