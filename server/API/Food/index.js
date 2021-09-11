@@ -39,7 +39,7 @@ Method    GET
 */
 Router.get("/r/:category", async (req, res) => {
   try {
-    // await Validatecategory(req.params);
+    //await Validatecategory(req.params);
     
     const { category } = req.params;
     const foods = await FoodModel.find({
