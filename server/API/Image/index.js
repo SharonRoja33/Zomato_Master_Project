@@ -23,9 +23,9 @@ Params    none
 Access    Public
 Method    POST  
 */
-Router.post("/", upload.array("file", 4), async (req, res) => {
+Router.post("/", upload.single("file"), async (req, res) => {
   try {
-    const file = req.files;
+    const file = req.file;
 
     // s3 bucket options
     const bucketOptions = {
