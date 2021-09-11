@@ -48,7 +48,7 @@ zomato.use("/user", User);
 
 zomato.get("/", (req, res) => res.json({ message: "Setup Success" }));
 
-console.log(process.env.GOOGLE_CLIENT_ID);
+//console.log(process.env.GOOGLE_CLIENT_ID);
 
 zomato.listen(4000, () => 
     ConnectDB()
