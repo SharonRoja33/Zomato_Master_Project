@@ -66,6 +66,6 @@ UserSchema.pre("save", function (next) {
     });
 });
 
-//export const UserModel = mongoose.model("Users", UserSchema);
+export const UserModel = mongoose.model("Users", UserSchema);
 
-module.exports = mongoose.model("Users", UserSchema);
+//module.exports = mongoose.model("Users", UserSchema);
