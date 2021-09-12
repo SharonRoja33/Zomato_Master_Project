@@ -6,7 +6,7 @@ import { RiSearch2Line } from "react-icons/ri";
 
 const MobileNav = () => {
     return (
-        <div className="flex items-center w-full justify-between md:hidden">
+        <div className="flex items-center w-full justify-between lg:hidden">
              <div className="w-28">
                     <img 
                       src="https://www.zomato.com/deliver-food/images/logo.png"
@@ -24,10 +24,11 @@ const MobileNav = () => {
     );
 }
 
-const MediumNav = () => {
+const LargeNav = () => {
     return (
         <>
-            <div className="hidden gap-4 w-full items-center justify-between md:flex lg:w-3/4">
+          <div className="container px-20 mx-auto">
+            <div className="hidden gap-4 w-full items-center justify-around lg:flex ">
                 <div className="w-28">
                     <img 
                       src="https://www.zomato.com/deliver-food/images/logo.png"
@@ -35,7 +36,7 @@ const MediumNav = () => {
                       className="w-full h-full"
                       />
                 </div>
-                <div className="w-full bg-white shadow-md p-3 flex items-center gap-3 border border-gray-200 rounded">
+                <div className="w-3/4 bg-white shadow-md p-3 flex items-center gap-3 border border-gray-200 rounded">
                     <div className="flex items-center gap-2 border-r-2 border-gray-300 pr-2">
                         <span className="text-pink-400">
                             <HiLocationMarker />
@@ -52,57 +53,24 @@ const MediumNav = () => {
                                className="w-full focus:outline-none"/>
                     </div>
                 </div>
-                <div className="flex gap-2">
+                <div className="ml-28 flex gap-4">
                     <button className="text-gray-500 text-xl hover:text-gray-800">Login</button>
                     <button className="text-gray-500 text-xl hover:text-gray-800">Signup</button>
                 </div>
             </div>
-
+         </div>
         </>
     )
 }
 
 
-const LargeNav = () => {
-    return (
-        <>
-            <div className="hidden gap-4 w-full items-center justify-between md:flex">
-                <div className="w-28">
-                    <img 
-                      src="https://www.zomato.com/deliver-food/images/logo.png"
-                      alt="logo"
-                      className="w-full h-full"
-                      />
-                </div>
-                <div className="w-full bg-white shadow-md p-3 flex items-center gap-3 border border-gray-200 rounded">
-                    <div className="flex items-center gap-2 border-r-2 border-gray-300 pr-2">
-                        <span className="text-pink-400">
-                            <HiLocationMarker />
-                        </span>
-                        <input type="text" placeholder="Bengaluru" />
-                        <IoMdArrowDropdown />
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <RiSearch2Line />
-                        <input type="search" placeholder="Search for restaurant, cuisine or a dish" />
-                    </div>
-                </div>
-                <div className="flex gap-3">
-                    <button className="text-gray-500 text-xl hover:text-gray-800">Login</button>
-                    <button className="text-gray-500 text-xl hover:text-gray-800">Signup</button>
-                </div>
-            </div>
-
-        </>
-    )
-}
 
 const Navbar = () => {
     return (
         <> 
             <nav className="p-4 flex bg-white shadow-md w-full items-center ">
                 <MobileNav />
-                <MediumNav />
+                <LargeNav />
             </nav>
         </>
     );
