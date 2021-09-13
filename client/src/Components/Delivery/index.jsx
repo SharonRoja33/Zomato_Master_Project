@@ -9,9 +9,9 @@ import RestaurantCard from "../RestaurantCard";
 const Delivery = () => {
   const [restaurantList, setRestaurantList] = useState([]);
 
-  const reduxState = useSelector(
+  /*const reduxState = useSelector(
     (globalStore) => globalStore.restaurant.restaurants
-  );
+  );*/
 
   /*useEffect(() => {
     reduxState.restaurants && setRestaurantList(reduxState.restaurants);

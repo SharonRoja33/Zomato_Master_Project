@@ -8,14 +8,14 @@ const RestaurantCard = (props) => {
   const [image, setImage] = useState({
     images: [],
   });
-  const dispatch = useDispatch();
+  //const dispatch = useDispatch();
 
-  useEffect(() => {
+  /*useEffect(() => {
     props.photos &&
       dispatch(getImage(props.photos)).then((data) =>
         setImage(data.payload.image)
       );
-  }, [props.photos]);
+  }, [props.photos]);*/
 
   return (
     <Link to={`/restaurant/${props._id}`} className="w-full">
