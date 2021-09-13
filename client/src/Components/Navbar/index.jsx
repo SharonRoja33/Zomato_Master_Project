@@ -15,9 +15,9 @@ const MobileNav = () => {
                       />
                 </div>
                 <div className="flex items-center gap-3">
-                    <button className="bg-pink-400 text-white py-2 px-3 rounded-full">Use App</button>
+                    <button className="bg-zomato-400 text-white py-2 px-3 rounded-full">Use App</button>
                 </div>
-                <span className="border p-2 border-gray-300 text-pink-400 rounded-full">
+                <span className="border p-2 border-gray-300 text-zomato-400 rounded-full">
                     < FaUserAlt />
                 </span>
         </div>
@@ -38,7 +38,7 @@ const LargeNav = () => {
                 </div>
                 <div className="w-3/4 bg-white shadow-md p-3 flex items-center gap-3 border border-gray-200 rounded">
                     <div className="flex items-center gap-2 border-r-2 border-gray-300 pr-2">
-                        <span className="text-pink-400">
+                        <span className="text-zomato-400">
                             <HiLocationMarker />
                         </span>
                         <input type="text" 
@@ -68,7 +68,7 @@ const LargeNav = () => {
 const Navbar = () => {
     return (
         <> 
-            <nav className="p-4 flex bg-white shadow-md w-full items-center ">
+            <nav className="p-4 flex bg-white shadow-md lg:shadow-none w-full items-center ">
                 <MobileNav />
                 <LargeNav />
             </nav>

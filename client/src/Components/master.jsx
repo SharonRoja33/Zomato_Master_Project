@@ -1,9 +1,17 @@
 import React from 'react';
 import { useParams  } from 'react-router-dom';
-export const Master = () => {
+
+// components
+import Delivery from './Delivery';
+import Dining from './Dining';
+
+
+ const Master = () => {
+     const { type } = useParams();
     return (
-        <div>
-            
+        <div className="my-5">
+        {type === "delivery" && <Delivery /> }
+        {type === "dining" && <Dining /> }
         </div>
     );
 };
