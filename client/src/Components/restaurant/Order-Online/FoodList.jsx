@@ -1,6 +1,6 @@
 import React from "react";
 
-// components
+// Components
 import FoodItem from "./FoodItem";
 
 const FoodList = (props) => {

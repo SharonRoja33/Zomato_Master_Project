@@ -8,7 +8,7 @@ import FloatMenuBtn from "../../Components/restaurant/Order-Online/FloatMenuBtn"
 import MenuListContainer from "../../Components/restaurant/Order-Online/MenuListContainer";
 import FoodList from "../../Components/restaurant/Order-Online/FoodList";
 
-// Redux actions
+// Redux Actions
 import { getFoodList } from "../../Redux/Reducer/Food/Food.action";
 import { addCart } from "../../Redux/Reducer/Cart/Cart.action";
 
