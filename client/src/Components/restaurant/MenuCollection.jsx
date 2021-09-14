@@ -9,7 +9,7 @@ const MenuCollection = (props) => {
 
   return (
     <>
-      {isMenuOpen && (
+      { isMenuOpen && (
         <ImageViewer
           src={props.image}
           currentIndex={CurrentImg}
