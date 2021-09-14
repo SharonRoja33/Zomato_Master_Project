@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { AiOutlineCompass } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
 
-// components
+// Components
 import FloatMenuBtn from "../../Components/restaurant/Order-Online/FloatMenuBtn";
 import MenuListContainer from "../../Components/restaurant/Order-Online/MenuListContainer";
 import FoodList from "../../Components/restaurant/Order-Online/FoodList";
