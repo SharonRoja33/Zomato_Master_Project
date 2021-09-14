@@ -7,7 +7,7 @@ import RestaurantLayoutHOC from "./HOC/Restaurant.HOC";
 // Component
 import Temp from "./Components/temp";
 
-// pages
+// Pages
 import Home from "./Page/Home";
 
 function App() {

@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import { useSelector, useDispatch } from "react-redux";
 import ReactStars from "react-rating-stars-component";
 
-// components
+// Components
 import MenuCollection from "../../Components/restaurant/MenuCollection";
 import MenuSimilarRestaurantcard from "../../Components/restaurant/MenuSimilarRestaurantcard";
 import { NextArrow, PrevArrow } from "../../Components/CarousalArrow";
