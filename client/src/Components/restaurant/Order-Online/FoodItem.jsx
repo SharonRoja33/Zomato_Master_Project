@@ -5,6 +5,7 @@ import { AiOutlinePlus } from "react-icons/ai";
 import { getFood } from "../../../Redux/Reducer/Food/Food.action";
 import { getImage } from "../../../Redux/Reducer/Image/Image.action";
 import { addCart } from "../../../Redux/Reducer/Cart/Cart.action";
+
 const FoodItem = (props) => {
   const [food, setFood] = useState({});
 
