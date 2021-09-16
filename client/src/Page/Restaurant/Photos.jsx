@@ -2,8 +2,9 @@ import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import ImageViewer from "react-simple-image-viewer";
 
-// components
+// Components
 import PhotoCollection from "../../Components/restaurant/PhotosCollection";
+
 // redux actions
 import { getImage } from "../../Redux/Reducer/Image/Image.action";
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 
-// component
+// Component
 import MenuCollection from "../../Components/restaurant/MenuCollection";
 
 // redux actions
