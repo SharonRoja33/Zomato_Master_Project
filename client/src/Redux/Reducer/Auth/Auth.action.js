@@ -3,7 +3,7 @@ import axios from "axios";
 // Redux types
 import { SIGN_IN, SIGN_UP, GOOGLE_AUTH, SIGN_OUT } from "./Auth.type";
 
-// redux actions
+// Redux actions
 import { getMyself, clearUser } from "../User/user.action";
 
 export const signIn = (userData) => async (dispatch) => {
