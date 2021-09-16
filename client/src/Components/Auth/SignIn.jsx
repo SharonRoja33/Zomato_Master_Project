@@ -9,7 +9,7 @@ export default function SignIn({ isOpen, setIsOpen }) {
   const [userData, setUserData] = useState({
     email: "",
     password: "",
-});
+  });
 
   const dispatch = useDispatch();
 

@@ -19,7 +19,7 @@ import Checkout from "./Page/Checkout";
 import RedirectRestaurant from "./Page/Restaurant/Redirect";
 import GoogleAuth from "./Page/GoogleAuth";
 
-// redux action
+// Redux action
 import { getMyself } from "./Redux/Reducer/User/user.action";
 
 // axios global settings
