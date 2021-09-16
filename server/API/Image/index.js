@@ -7,7 +7,7 @@ import multer from "multer";
 import { ImageModel } from "../../database/allModels";
 
 // Utilities
-import { s3Upload } from "../../Utils/AWS/s3";
+import { s3Upload } from "../../Utils/s3";
 
 const Router = express.Router();
 
@@ -15,6 +15,22 @@ const Router = express.Router();
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
 
+/*
+Route     /
+Des       Get Image details
+Params    _id
+Access    Public
+Method    GET  
+*/
+Router.get("/:_id", async (req, res) => {
+  try {
+    const image = await ImageModel.findById(req.params._id);
+
+    return res.json({ image });
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
+  }
+});
 
 /*
 Route     /
@@ -29,13 +45,12 @@ Router.post("/", upload.single("file"), async (req, res) => {
 
     // s3 bucket options
     const bucketOptions = {
-      Bucket: "shapeaijunebatch456",
+      Bucket: "shapeaijunebatch123",
       Key: file.originalname,
       Body: file.buffer,
       ContentType: file.mimetype,
       ACL: "public-read", // Access Control List
     };
-
 
     const uploadImage = await s3Upload(bucketOptions);
 

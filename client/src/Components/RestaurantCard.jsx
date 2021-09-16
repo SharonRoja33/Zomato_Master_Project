@@ -1,21 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-//import { useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { AiTwotoneStar } from "react-icons/ai";
-//import { getImage } from "../Redux/Reducer/Image/Image.action";
+import { getImage } from "../Redux/Reducer/Image/Image.action";
 
 const RestaurantCard = (props) => {
   const [image, setImage] = useState({
     images: [],
   });
-  //const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  /*useEffect(() => {
+  useEffect(() => {
     props.photos &&
       dispatch(getImage(props.photos)).then((data) =>
         setImage(data.payload.image)
       );
-  }, [props.photos]);*/
+  }, [props.photos]);
 
   return (
     <Link to={`/restaurant/${props._id}`} className="w-full">
