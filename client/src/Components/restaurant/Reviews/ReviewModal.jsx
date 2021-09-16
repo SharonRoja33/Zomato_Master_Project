@@ -4,7 +4,7 @@ import Rating from "react-rating-stars-component";
 import { useParams } from "react-router";
 import { useDispatch } from "react-redux";
 
-// redux action
+// Redux action
 import { postReviews } from "../../../Redux/Reducer/Reviews/review.action";
 
 export default function ReviewModal({ isOpen, setIsOpen, ...props }) {

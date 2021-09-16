@@ -4,6 +4,7 @@ const INITIAL_STATE = {
   reviews: [],
 };
 
+
 const restaurantReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case GET_REVIEW:

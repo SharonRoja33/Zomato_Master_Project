@@ -8,7 +8,7 @@ import HomeLayoutHOC from "./HOC/Home.Hoc";
 import RestaurantLayoutHOC from "./HOC/Restaurant.HOC";
 import CheckoutLayoutHOC from "./HOC/Checkout.Hoc";
 
-// pages
+// Pages
 import Home from "./Page/Home";
 import Overview from "./Page/Restaurant/Overview";
 import OrderOnline from "./Page/Restaurant/OrderOnline";
@@ -16,7 +16,7 @@ import Reviews from "./Page/Restaurant/Reviews";
 import Menu from "./Page/Restaurant/Menu";
 import Photos from "./Page/Restaurant/Photos";
 import Checkout from "./Page/Checkout";
-//import RedirectRestaurant from "./Page/Restaurant/Redirect";
+import RedirectRestaurant from "./Page/Restaurant/Redirect";
 //import GoogleAuth from "./Page/GoogleAuth";
 
 // redux action

@@ -24,6 +24,7 @@ Router.get("/:resid", async (req, res) => {
   }
 });
 
+
 /*
 Route     /new
 Des       Add new food review/rating
@@ -44,6 +45,7 @@ Router.post("/new", passport.authenticate("jwt"), async (req, res) => {
     return res.status(500).json({ error: error.message });
   }
 });
+
 
 /*
 Route     /delete

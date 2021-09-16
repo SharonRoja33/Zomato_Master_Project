@@ -1,6 +1,6 @@
 import axios from "axios";
 
-// Redux types
+// redux types
 import { GET_REVIEW, POST_REVIEW } from "./review.type";
 
 export const getReviews = (resId) => async (dispatch) => {
