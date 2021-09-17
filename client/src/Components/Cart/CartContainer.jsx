@@ -11,7 +11,7 @@ import { useHistory } from "react-router";
 // components
 import FoodItem from "./FoodItem";
 
-// redux action
+// Redux action
 import { getCart } from "../../Redux/Reducer/Cart/Cart.action";
 
 const CartSM = ({ toggle }) => {
