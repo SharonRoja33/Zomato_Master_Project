@@ -4,7 +4,7 @@ import {
   DELETE_CART,
   INCREMENT_QTY,
   DECREMENT_QTY,
-} from "./Cart.type";
+ } from "./Cart.type";
 
 const INITIAL_STATE = {
   cart: [],

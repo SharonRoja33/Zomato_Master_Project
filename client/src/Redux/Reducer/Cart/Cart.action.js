@@ -1,6 +1,6 @@
 import axios from "axios";
 
-// Redux types
+// Redux Types
 import {
   GET_CART,
   ADD_CART,
