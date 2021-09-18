@@ -58,10 +58,11 @@ zomato.get("/", (req, res) => res.json({ message: "Setup success" }));
 
 //const port = process.env.PORT || 4000;
 
-zomato.listen(port, (4000) => 
+zomato.listen(4000, () => 
   ConnectDB()
     .then(() => console.log("Server is running "))
     .catch(() =>
       console.log("Server is running, but database connection failed... ")
     )
 );
+
