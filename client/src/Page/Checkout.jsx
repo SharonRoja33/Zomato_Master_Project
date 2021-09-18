@@ -3,7 +3,7 @@ import { BsShieldLockFill } from "react-icons/bs";
 import { useSelector, useDispatch } from "react-redux";
 import Razorpay from "razorpay";
 
-// components
+// Components
 import FoodItem from "../Components/Cart/FoodItem";
 import AddressList from "../Components/Checkout/AddressList";
 
@@ -31,7 +31,7 @@ const Checkout = () => {
 
   const payNow = () => {
     let options = {
-      key: "rzp_test_RNvW44vJHiXg1b",
+      key: "rzp_test_RBOQ4GmirZpvef",
       amount:
         reduxStateCart.reduce((acc, curVal) => acc + curVal.totalPrice, 0) *
         100,

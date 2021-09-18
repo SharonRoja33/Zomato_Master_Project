@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
-// components
+// Components
 import Navbar from "../Components/Navbar/checkoutNavbar";
 // redux action
 import { getCart } from "../Redux/Reducer/Cart/Cart.action";

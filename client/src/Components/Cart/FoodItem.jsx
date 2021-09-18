@@ -3,9 +3,9 @@ import { BsTrashFill } from "react-icons/bs";
 import { useDispatch } from "react-redux";
 
 import {
-  DeleteCart,
-  IncQty,
-  DecQty,
+    DeleteCart,
+    IncQty,
+    DecQty,
 } from "../../Redux/Reducer/Cart/Cart.action";
 const FoodItem = (props) => {
   const dispatch = useDispatch();

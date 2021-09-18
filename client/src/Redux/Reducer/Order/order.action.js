@@ -1,6 +1,6 @@
 import axios from "axios";
 
-// Redux types
+// redux types
 import { CREATE_ORDER, ORDER_PLACED } from "./order.type";
 
 export const createOrder = (amount) => async (dispatch) => {
