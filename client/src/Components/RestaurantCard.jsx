@@ -11,8 +11,8 @@ const RestaurantCard = (props) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    props.photos &&
-      dispatch(getImage(props.photos)).then((data) =>
+    props?.photos &&
+      dispatch(getImage(props?.photos)).then((data) =>
         setImage(data.payload.image)
       );
   }, [props.photos]);
@@ -39,7 +39,7 @@ const RestaurantCard = (props) => {
             </span>
           </div>
           <img
-            src={image.images.length && image.images[0].location}
+            src={image?.images.length && image?.images[0].location}
             alt="food"
             className="w-full h-full rounded-2xl"
           />
@@ -52,7 +52,7 @@ const RestaurantCard = (props) => {
             </span>
           </div>
           <div className="flex items-center justify-between text-gray-500">
-            <p>{props.cuisine.join(", ")}</p>
+            <p>{props.cuisine?.join(", ")}</p>
             <p>₹ {props.averageCost} for one</p>
           </div>
         </div>

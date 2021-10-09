@@ -28,8 +28,6 @@ import ConnectDB from "./database/connection";
 
 const zomato = express();
 
-console.log(process.env);
-
 // application middlewares
 zomato.use(express.json());
 zomato.use(express.urlencoded({ extended: false }));
@@ -56,7 +54,8 @@ zomato.use("/payments", Payments);
 
 zomato.get("/", (req, res) => res.json({ message: "Setup success" }));
 
-//const port = process.env.PORT || 4000;
+
+//console.log(error);
 
 zomato.listen(4000, () => 
   ConnectDB()

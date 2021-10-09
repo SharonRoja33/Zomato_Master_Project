@@ -8,10 +8,10 @@ import { IoCloseSharp } from "react-icons/io5";
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router";
 
-// Components
+// components
 import FoodItem from "./FoodItem";
 
-// Redux action
+// redux action
 import { getCart } from "../../Redux/Reducer/Cart/Cart.action";
 
 const CartSM = ({ toggle }) => {

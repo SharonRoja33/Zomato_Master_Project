@@ -81,4 +81,20 @@ Router.get("/search", async (req, res) => {
   }
 });
 
+/*
+Route     /new
+Des       Add new restaurant
+Params    none 
+Access    Private
+Method    POST  
+*/
+Router.post("/new", passport.authenticate("jwt"), async (req, res) => {
+  try {
+    const newRetaurant = await RestaurantModel.create(req.body.retaurantData);
+    return res.json({ restaurants: newRetaurant });
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
+  }
+});
+
 export default Router;

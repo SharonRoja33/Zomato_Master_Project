@@ -45,7 +45,7 @@ Router.post("/", upload.single("file"), async (req, res) => {
 
     // s3 bucket options
     const bucketOptions = {
-      Bucket: "shapeaijunebatch123",
+      Bucket: "shapeaijunebatch456",
       Key: file.originalname,
       Body: file.buffer,
       ContentType: file.mimetype,

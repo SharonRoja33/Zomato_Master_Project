@@ -33,7 +33,7 @@ const OrderOnline = () => {
       dispatch(getFoodList(reduxState.menu)).then((data) =>
         setMenu(data.payload.menus.menus)
       );
-  }, [reduxState]);
+  }, []);
 
   
 
