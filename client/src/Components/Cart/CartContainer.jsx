@@ -61,9 +61,9 @@ const CartLg = ({ toggle }) => {
           </span>
           <h4>Your Orders ({reduxState.length})</h4>
         </div>
-        <div className="flex items-center gap-2">
-          <h4 className="text-xl">
-            Subtotal:₹{" "}
+        <div className="flex items-center gap-1">
+          <h4 className="flex items-center gap-2 text-xl">
+            Subtotal:₹        
             {reduxState.reduce((acc, curVal) => acc + curVal.totalPrice, 0)}
           </h4>
           <button

@@ -74,7 +74,7 @@ const Overview = () => {
         setReviewss(data.payload.reviews)
       );
     }
-  }, []);
+  }, [reduxState]);
 
   const ratingChanged = (newRating) => {
     console.log(newRating);

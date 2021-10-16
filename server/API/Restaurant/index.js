@@ -96,5 +96,27 @@ Router.post("/new", passport.authenticate("jwt"), async (req, res) => {
     return res.status(500).json({ error: error.message });
   }
 });
+/*
+Route     /update
+Des       update exisitng restaurant data
+Params    none 
+Access    Private
+Method    POST  
+*/
+Router.patch("/update", passport.authenticate("jwt"), async (req, res) => {
+  try {
+    const updatedRestaurant = await RestaurantModel.findByIdAndUpdate(
+      req.body.retaurantData._id,
+      { $set: req.body.retaurantData },
+      { new: true }
+    );
+    if (!updatedRestaurant)
+      return res.status(404).json({ restaurants: "Restaurant Not Found!!!" });
+
+    return res.json({ restaurants: updatedRestaurant });
+  } catch (error) {
+    return res.status(500).json({ error: error.message });
+  }
+});
 
 export default Router;
